@@ -1,12 +1,16 @@
 {
-  "login": {
-    "status": 200,
-    "message": "User Logged in",
-    "token": "ekwjnersjSnvsjefnv;eojrvbneqorjnvbeornvGLKMOoribSDDSroignewroitwbrohutbhwerhboituhnbSDouwrhntobiu"
-  },
-  "register": {
-    "status": 200,
-    "message": "Account created succesufully. User Logged in",
-    "token": "ekwjnersjSnvsjefnv;eojrvbneqorjnvbeornvGLKMOoribSDDSroignewroitwbrohutbhwerhboituhnbSDouwrhntobiu"
-  }
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/login",
+      "statusCode": 200,
+      "body": "{\"token\": \"your-auth-token\"}"
+    },
+    {
+      "method": "POST",
+      "path": "/register",
+      "statusCode": 200,
+      "body": "{\"message\": \"User registered successfully\"}"
+    }
+  ]
 }
